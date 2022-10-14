@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle,
+          rgba(18, 140, 213, 1) 44%,
+          rgba(15, 31, 227, 0.7547883064516129) 100%
+        );
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+      }
+      .palindrome {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.3rem;
+      }
+      .perfect-num {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.3rem;
+      }
+      input,
+      button,
+      textarea {
+        margin: 0.2rem;
+        border-radius: 8px;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+      }
+      textarea {
+        font-size: 1.5rem;
+        background: radial-gradient(
+          circle,
+          rgba(42, 163, 188, 1) 0%,
+          rgba(15, 227, 190, 1) 100%
+        );
+      }
+      .input2::placeholder {
+        color: black;
+        opacity: 0.9;
+      }
+      input {
+        font-size: 1.5rem;
+        padding: 1rem;
+        background: radial-gradient(
+          circle,
+          rgba(42, 163, 188, 1) 0%,
+          rgba(15, 227, 190, 1) 100%
+        );
+      }
+      button {
+        background-color: red;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="palindrome">
+        <input class="input1" type="number" value="0" />
+
+        <button class="btn-pal">List Palindromic Numbers</button>
+        <textarea class="area1" name="" id="" cols="20" rows="25"></textarea>
+      </div>
+      <div class="perfect-num">
+        <input class="input2" type="number" placeholder="Top Limit" />
+        <button class="btn-per">List Perfect Numbers</button>
+        <textarea class="area2" name="" id="" cols="20" rows="25"></textarea>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
